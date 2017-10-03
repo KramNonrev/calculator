@@ -1,5 +1,9 @@
-numfunc: numfunc.c functions.o
-	gcc $^ -o calculator
+
+calculator: calculator.c functions.o
+	gcc $^ -o $@
 
 functions: functions.c functions.h
-	gcc -c $^ $@ 
+	gcc -c $^ $@
+
+clean:
+	rm *.o 
