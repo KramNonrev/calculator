@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include"functions.h"
 void main(int argc, char *argv[])
 {
 
@@ -10,7 +10,7 @@ void main(int argc, char *argv[])
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
-	total = x + y;
+	total = add(x,y);
 
 	printf("X + Y = %d\n",total);
 
