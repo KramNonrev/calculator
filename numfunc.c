@@ -12,6 +12,6 @@ void main(int argc, char *argv[])
 	y = atoi(argv[2]);
 	total = x + y;
 
-	printf("X + Y =",total);
+	printf("X + Y = %d\n",total);
 
 }
